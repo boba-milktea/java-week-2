@@ -53,6 +53,36 @@ public class Exercise4 {
         //String.valueOf
         String usingValueOf = String.valueOf(num);
         System.out.println(usingValueOf); // "123"
+
+
+        int[] arr = { 2, -4, 8, 0, 3, 1};
+        Arrays.sort(arr);
+        System.out.println("Sorted Array: " + Arrays.toString(arr));
+
+        // Copy into another array
+        int[] arr2 = Arrays.copyOf(arr, arr.length);
+        System.out.println("Copied Array: " + Arrays.toString(arr2
+        ));
+
+        // Search for a value
+        int value = Arrays.binarySearch(arr, -1);
+        System.out.println("Searched value: " + value);
+
+       /*int[] sortedArr = {1, 3, 5, 7};
+          int result = Arrays.binarySearch(sortedArr, 2);
+              if (result < 0) {
+                  int insertionPoint = -result - 1;
+                    System.out.println("Insert at index: " + insertionPoint);
+                 }
+        */
+
+
+        // Compare two values
+        int[] arr3 = { 7, 2, 3, 9, 0 };
+        System.out.println("Do they have the same values? " + Arrays.equals(arr, arr3));
+
+        // Compare the reference;
+        System.out.println(arr == arr2);
     }
 }
 

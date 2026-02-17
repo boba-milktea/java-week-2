@@ -13,7 +13,11 @@ public class Exercise2
 {
     public static void main(String[] args)
     {
-        // TODO: Create Person objects using both constructors
+        Person p1 = new Person();
+        Person p2 = new Person("George", 20);
+
+        p1.display();
+        p2.display();
     }
 
     Exercise2() {
@@ -28,5 +32,25 @@ class WeTrySomething {
     public int field;
     public WeTrySomething() {
 
+    }
+}
+
+class Person {
+    String name;
+    int age;
+
+    Person() {
+        this.name = "Julie";
+        this.age = 30;
+    }
+
+    // parameterized constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void display () {
+        System.out.println(name + " is " + age + " years old." );
     }
 }

@@ -14,21 +14,34 @@ public class Exercise4
 {
 
     // TODO: Constructor prints "Object created"
+    public Exercise4() {
+        System.out.println("Object created");
+    }
 
     // TODO: Varargs method printStrings()
+    public void printStrings(String... names) {
+        for (String name : names ) {
+            System.out.print(name + " ");
+        }
+        System.out.println();
+    }
 
     public static void main(String[] args)
     {
         // TODO: Test constructor
 
         Exercise4 obj = new Exercise4();
+        System.out.println("Test" + obj);
 
         // TODO: Call printStrings with multiple arguments
+        obj.printStrings("Jullie", "Lulu", "Funky", "Sweet");
 
         Shape s1 = new Circle();
 //        s1.draw();
 
         // TODO: Create Rectangle object and call draw()
+        Shape rec = new Rectangle();
+            rec.draw();
     }
 }
 
@@ -36,6 +49,7 @@ public class Exercise4
 abstract class Shape
 {
     // TODO: declare abstract method draw()
+    public abstract void draw();
 }
 
 class Circle extends Shape
@@ -48,4 +62,9 @@ class Circle extends Shape
 }
 
 // TODO: Create Rectangle class that implements draw()
-
+class Rectangle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Rectangle");
+    }
+}

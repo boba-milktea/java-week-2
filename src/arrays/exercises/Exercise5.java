@@ -1,4 +1,5 @@
 package arrays.exercises;
+import java.util.Scanner;
 
 /**
  * Exercise 5: Linear Search
@@ -12,6 +13,29 @@ public class Exercise5
 {
     public static void main(String[] args)
     {
-        // TODO: Implement exercise
+        // linear search
+        Scanner scanner = new Scanner(System.in);
+        int[] arr = {3, 5, 9, 0, 2, 8};
+
+        System.out.print("Please enter a number to search the array: ");
+
+        while(!scanner.hasNextInt()) {
+            System.out.println("Please enter a valid number: ");
+            scanner.next();
+        }
+        int key = scanner.nextInt();
+        int index = -1;
+
+        for (int i = 0; i < arr.length; i++ ) {
+            if (arr[i] == key) {
+                index = i;
+                break;
+            }
+        }
+
+        System.out.println(index != -1 ? ("Found it in the array at index " + index) : ("Key " + key + " not found." ));
+
+
+        scanner.close();
     }
 }
