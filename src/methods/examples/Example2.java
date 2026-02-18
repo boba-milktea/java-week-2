@@ -1,5 +1,6 @@
 package methods.examples;
 
+
 /**
  * Example 2: Methods with Modifiers
  * - Access Modifiers: public, protected, default, private
@@ -16,10 +17,6 @@ public class Example2
         obj.publicMethod();
         obj.protectedMethod();
         obj.defaultMethod();
-        obj.privateMethod();
-        staticMethod();
-        obj.finalMethod();
-        obj.synchronizedMethod();
     }
 
     // Public method → accessible everywhere

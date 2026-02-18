@@ -33,5 +33,19 @@ public class Example4
 
         // To check if two arrays are the same reference
         System.out.println("Same reference? " + (arr == copy));
+
+        int[] another = arr;
+
+        System.out.println(arr);
+        System.out.println(another);
+        System.out.println(arr == another);
+
+        arr[2] = 10;    //they have the same reference
+
+        System.out.println(another[2]);
+        //although we have changed arr[2],
+        // since they have the same reference and they point to the same array,
+        //another[2] is also 10
+
     }
 }

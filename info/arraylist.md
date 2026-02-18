@@ -12,7 +12,7 @@ It belongs to the `java.util` package and implements the **List interface**.
 ---
 
 ## 2. Declaration and Initialization
-
+//TODO: write about Arrays.asList and List.of
 ```java
 import java.util.ArrayList;
 
@@ -24,6 +24,14 @@ ArrayList<String> names = new ArrayList<>(20);
 
 // Raw type (not recommended)
 ArrayList list = new ArrayList();
+
+// immutable list
+var numbers = java.util.List.of(1, 2, 3);
+
+// `asList(T... a)` → Convert **array to List**
+// check arrays-class title 10
+String[] arr = {"A", "B", "C"};
+List<String> list = Arrays.asList(arr);
 ````
 
 ---

@@ -12,7 +12,14 @@ public class Exercise1
 {
     public static void main(String[] args)
     {
-        // TODO: Create Book objects and test methods
+        Book b = new Book();
+        b.displayInfo();
+    }
+}
+
+class Book {
+    void displayInfo() {
+        System.out.println("Book Details");
     }
 }
 

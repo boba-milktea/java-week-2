@@ -13,7 +13,6 @@ and an introduction to **classes and objects**.
 - Introduction to **Classes** and **Objects**
 
 ---
-
 ## 📝 Project Ideas
 
 ### 1. ➕ Advance Calculator
