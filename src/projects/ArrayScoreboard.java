@@ -21,7 +21,6 @@ public class ArrayScoreboard {
         int [][] scores = fillNumbers(players, games);
         display(scores);
         showTotalScore(scores);
-
     }
 
     // ===================== methods ============================

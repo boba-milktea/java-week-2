@@ -22,8 +22,27 @@ public class BookInfo {
 class Book {
     String title;
     String author;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     int year;
 
+=======
+=======
+>>>>>>> Stashed changes
+    Integer year;
+
+    // default constructor (no-arg constructor) to make the default values
+    public Book () {
+        title = "";
+        author = "";
+        year = 0;
+    }
+
+    // parameter constructor
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     public Book(String title, String author, int year) {
         this.title = title;
         this.author = author;
@@ -31,9 +50,23 @@ class Book {
     }
 
     public void printDetails() {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         System.out.println("The book title: " + title);
         System.out.println("The book author: " + author);
         System.out.println("Published Year: " + year);
         System.out.println();
+=======
+=======
+>>>>>>> Stashed changes
+        System.out.printf("Title %s | Book Author %s | Published Year %d\n", this.title, this.author, this.year);
+        // System.out.println("The book title: " + title);
+        // System.out.println("The book author: " + author);
+        // System.out.println("Published Year: " + year);
+        // System.out.println();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
 }

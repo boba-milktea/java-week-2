@@ -29,11 +29,12 @@ public class ArrayStatistics {
         System.out.println("Min Value: " + minValue(array));
         System.out.println("Average: " + average(array));
         System.out.println("Sum: " + sum(array));
+    }
 
+        scanner.close();
     }
 
     // --------------------- methods --------------------------
-
 
 
 // I ask for numbers
